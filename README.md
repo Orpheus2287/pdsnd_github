@@ -6,9 +6,9 @@ README.md created on: 24/11/2020.
 Explore US Bikeshare Data Project
 
 ### Description
-In this project I used Python to understand U.S. bikeshare data spanning three major cities - Chicago, New York City, and Washington.
+In this project I used Python to explore U.S. bikeshare data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington. 
 
-I was tasked with creating a python program that calculates statistics, and building an interactive environment where a user can choose their data and filter a dataset to analyze.
+I used Python to create code that imports the data and allows the user to answer interesting questions about it by computing descriptive statistics. The program provides the user with an interactive environment where they are able to choose their data and filter a dataset to analyze.
 
 ### Files used
 bikeshare.py
