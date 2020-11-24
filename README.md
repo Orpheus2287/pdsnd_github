@@ -1,5 +1,5 @@
 # **Date created**
-bikeshare.py project created on: *19/11/2020*.
+bikeshare.py project created on: *19/11/2020*.  
 README.md created on: *24/11/2020*.
 
 # **Project Title**
@@ -12,15 +12,15 @@ In this project I used Python to:
 3. Providee the user with an interactive environment where they can choose their data and filter a dataset to analyze.
 
 # **Files used**
-*bikeshare.py
-*chicago.csv
-*new_york_city.csv
-*washington.csv
-*readme.txt
+* bikeshare.py
+* chicago.csv
+* new_york_city.csv
+* washington.csv
+* readme.txt
 
 # **Credits**
-*Sources Consulted:*
-[stackoverflow](https://stackoverflow.com)
-[Udacity](https://knowledge.udacity.com/?nanodegree=nd104&page=1&project=328&query=readme.txt&rubric=1379&sort=RELEVANCE)
-[pandas](https://pandas.pydata.org/pandas-docs/stable/index.html)
+*Sources Consulted:*  
+* [stackoverflow](https://stackoverflow.com)  
+* [Udacity](https://knowledge.udacity.com/?nanodegree=nd104&page=1&project=328&query=readme.txt&rubric=1379&sort=RELEVANCE)  
+* [pandas](https://pandas.pydata.org/pandas-docs/stable/index.html)
 
