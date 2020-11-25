@@ -182,12 +182,17 @@ def user_stats(df):
 def raw_data_display(df):
     """Displays 5 rows of data until user says 'no'."""
     i = 0
-    raw_data = input('Do you want to see some raw data? (y/n): ').lower()
-   
-    while raw_data in ('yes', 'y'):    
+    list = ['yes', 'y', 'no', 'n'] 
+    answer = input('Do you want to see some raw data? (y/n): ').lower()
+    
+    while answer not in list:
+        print('\nNot a valid selection. Please reply with y/n.')
+        answer = input('Do you want to see some raw data? (y/n): ').lower()
+           
+    while answer in ('yes', 'y'):    
         print(df.iloc[i:i+5])
         i += 5
-        raw_data = input('Do you want to see more sample data? (y/n): ').lower()
+        answer = input('Do you want to see more sample data? (y/n): ').lower()
         
         
 def main():
