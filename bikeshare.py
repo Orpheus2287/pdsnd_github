@@ -165,11 +165,11 @@ def user_stats(df):
     # display earliest, most recent, and most common year of birth
     if 'Birth Year' in df:
         earliest_dob = df['Birth Year'].min()
-        print('The earliest year of birth is: ', earliest_dob)
+        print('The earliest year of birth is: ', int(earliest_dob))
         recent_dob = df['Birth Year'].max()
-        print('The most recent year of birth is: ', recent_dob)
+        print('The most recent year of birth is: ', int(recent_dob))
         common_dob = df['Birth Year'].mode()[0]
-        print('The most common year of birth is: ', common_dob)
+        print('The most common year of birth is: ', int(common_dob))
     else:
         print('The earliest year of birth is: N/A - data not available')
         print('The most recent year of birth is: N/A - data not available')
@@ -182,12 +182,17 @@ def user_stats(df):
 def raw_data_display(df):
     """Displays 5 rows of data until user says 'no'."""
     i = 0
-    raw_data = input('Do you want to see some raw data? (y/n): ').lower()
-   
-    while raw_data in ('yes', 'y'):    
+    list = ['yes', 'y', 'no', 'n'] 
+    answer = input('Do you want to see some raw data? (y/n): ').lower()
+    
+    while answer not in list:
+        print('\nNot a valid selection. Please reply with y/n.')
+        answer = input('Do you want to see some raw data? (y/n): ').lower()
+           
+    while answer in ('yes', 'y'):    
         print(df.iloc[i:i+5])
         i += 5
-        raw_data = input('Do you want to see more sample data? (y/n): ').lower()
+        answer = input('Do you want to see more sample data? (y/n): ').lower()
         
         
 def main():
